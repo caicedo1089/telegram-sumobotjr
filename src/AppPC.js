@@ -54,7 +54,7 @@ class AppPC {
         return bot
     }
 
-    //Creamos lo necesario para interactuar con el sumo bot
+    //Creamos lo necesario para interactuar con el sumobot
     initSumoBot()
     {
         var five = require('johnny-five');
@@ -113,8 +113,8 @@ class AppPC {
             function(msg)
             {
                 const chatId = msg.chat.id
-
                 //console.log('msg:', msg)
+
                 //Si lo reconoce el api, es decir tiene entities
                 if(msg.entities)
                 {

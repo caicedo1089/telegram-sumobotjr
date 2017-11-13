@@ -27,10 +27,10 @@ class StartCommand extends Command {
                 funtionExcecute: 'displayMenu',
             }
 
-            misArguments.push(`${App.lang('Hola')} <b>${msg.from.first_name}</b>\n\n`)
+            misArguments.push(`${App.lang('Hola')} <b>${username}</b>\n\n`)
         }
         
-        //Se ejecuta la función de acuerdo al último estado
+        //Se ejecuta la función de acuerdo al último estado, se llama una función ver http://pcaicedo.com/web/diferentes-formas-de-ejecutar-una-funcion-en-javascript/
         misArguments = this[App.session[chatId].funtionExcecute].apply(this, [msg].concat(misArguments))
 
         //Se arma la respuesta
@@ -68,9 +68,9 @@ class StartCommand extends Command {
         objResultParseMode['parse_mode'] = 'HTML'
         objResultParseMode['reply_markup'] = {
             "keyboard": [
-                ['Arriba'],
+                ['Adelante'],
                 ['Parar'],
-                ['Abajo'],
+                ['Atrás'],
             ]
         }
 
@@ -80,11 +80,11 @@ class StartCommand extends Command {
 
             switch (msg.text) 
             {
-                case 'Arriba':
+                case 'Adelante':
                     this.sumoBot.leftWheel.ccw();
                     this.sumoBot.rightWheel.cw();
                     break;
-                case 'Abajo':
+                case 'Atrás':
                     this.sumoBot.leftWheel.cw();
                     this.sumoBot.rightWheel.ccw();
                     break;
@@ -95,45 +95,12 @@ class StartCommand extends Command {
                     break;
             }
 
-            
-
             return [strResult, objResultParseMode]
         }
         else
         {
-            strResult += 'Nuevos controles activados.'
+            strResult += 'Controles activados.'
         }
-        
-        /*strResult += `<b>${'Tú'} (${this.global.board.chars.user1}) vs ${App.session[chatId].user2} (${this.global.board.chars.user2})</b>\n\n` 
-        strResult += `<i>${App.session[chatId][App.session[chatId].turn]}</i> es su turno.\n\n`
-        strResult += `<pre>${this.viewBoard(App.session[chatId].strBoard, 6)}</pre>`
-       
-       
-        objResultParseMode['parse_mode'] = 'HTML'
-        
-        objResultParseMode['reply_markup'] = {
-            "keyboard": this.viewOptions(App.session[chatId].strBoard)
-        }
-        
-        //Delego la nueva función
-        //App.session[chatId].funtionExcecute = 'excecuteMenu'
-
-        if(App.session[chatId].attempts < 1)
-        {
-            strResult += App.lang('\n\nJuego Terminado!!!\n')
-            //App.session[chatId].funtionExcecute = 'displayMenu'
-
-            //Reset de los valores
-            App.session[chatId].strBoard = this.global.board.default,
-            App.session[chatId].turn = 'user1',
-            App.session[chatId].attempts = this.global.board.attempts
-
-            objResultParseMode['reply_markup'] = {
-                "keyboard": [
-                    ["Encender"],   
-                ]
-            }
-        }*/
 
         return [strResult, objResultParseMode]
     }

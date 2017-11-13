@@ -1,7 +1,6 @@
 'use strict';
 
 const Command = require('./Command')
-//import Command from './Commands/Command' no soportado por NodeJS
 
 class ConfigCommand extends Command {
     
@@ -10,7 +9,6 @@ class ConfigCommand extends Command {
         super(name, bot)
 
         console.log('Comando ' +  this.name)
-        
     }
 
     excecute(chatId, msg)

@@ -1,6 +1,6 @@
 let config = {
     bot:{
-        name: 'LaViejaPCBot',
+        name: 'TelegramSumobotJR',
         commands: [
             //Comandos globales
             'start',
