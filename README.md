@@ -4,7 +4,9 @@
 
 Este proyecto fue realizado para el taller nro 1 del cumpleaños de [BogotaJS](http://bogotajs.com/) el 18 de noviembre de 2017. 
 
-La presentación del taller se puede encontrar en la carpeta docs del proyecto.
+La [presentación](https://github.com/caicedo1089/telegram-sumobotjr/blob/master/docs/Controlando%20un%20sumobotjr%20desde%20telegram.pdf) del taller se puede encontrar en la carpeta [docs](https://github.com/caicedo1089/telegram-sumobotjr/tree/master/docs) del proyecto.
+
+<b>Nota:<b> Recuerden que antes de probar esta librería deben tener el johnny-five funcionando. Se recomienda hacer el [ejemplo de sumobotjs](https://github.com/makenai/sumobot-jr/blob/master/code_example/sumobot.js)
 
 ## Demostración
 
@@ -13,18 +15,17 @@ La presentación del taller se puede encontrar en la carpeta docs del proyecto.
 ## Instalación
 
 ```
-npm install telegram-sumobotjr
+npm i telegram-sumobotjr
 ```
 
 ## Uso
 
 ```
-import telegram-sumobotjr from 'telegram-sumobotjr'
+const telegramSumobotJR = require('telegram-sumobotjr')
+const token = 'token'
+const pkg = {}
 
-const token = '<mi-token-bot-telegram>'
-const pkg = JSON.parse(require('fs').readFileSync('../package.json')) //Opcional
-
-let botTelegram = new telegram-sumobotjr(token, pkg)
+let botTelegram = new telegramSumobotJR(token, pkg)
 ```
 
 ## Créditos
