@@ -8,7 +8,7 @@ La presentación del taller se puede encontrar en la carpeta docs del proyecto.
 
 ## Demostración
 
-![Demostración]((https://user-images.githubusercontent.com/10428238/33673458-bf91764a-da7a-11e7-99b9-56fb73649c13.gif)
+![Demostración](https://user-images.githubusercontent.com/10428238/33673458-bf91764a-da7a-11e7-99b9-56fb73649c13.gif)
 
 ## Instalación
 
