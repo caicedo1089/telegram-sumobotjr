@@ -1,6 +1,6 @@
 {
   "name": "telegram-sumobotjr",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Bot de telegram que permite controlar un sumoBot-jr",
   "main": "dist/AppPC.js",
   "scripts": {
