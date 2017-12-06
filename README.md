@@ -6,7 +6,7 @@ Este proyecto fue realizado para el taller nro 1 del cumpleaños de [BogotaJS](h
 
 La [presentación](https://github.com/caicedo1089/telegram-sumobotjr/blob/master/docs/Controlando%20un%20sumobotjr%20desde%20telegram.pdf) del taller se puede encontrar en la carpeta [docs](https://github.com/caicedo1089/telegram-sumobotjr/tree/master/docs) del proyecto.
 
-<b>Nota:</b> Recuerden que antes de probar esta librería deben tener el johnny-five funcionando. Se recomienda hacer el [ejemplo de sumobotjs](https://github.com/makenai/sumobot-jr/blob/master/code_example/sumobot.js)
+<b>Nota:</b> Recuerden que antes de probar esta librería deben tener el johnny-five funcionando. Se recomienda hacer el [ejemplo de sumobotjr](https://github.com/makenai/sumobot-jr/blob/master/code_example/sumobot.js)
 
 ## Demostración
 
