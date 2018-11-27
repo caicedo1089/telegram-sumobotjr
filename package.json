@@ -7,18 +7,18 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Pedro Caicedo <caicedo1089@gmail.com> (http://pcaicedo.com), Sergio Sinuco",
-  "repository":{
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/caicedo1089/telegram-sumobotjr"
   },
   "homepage": "https://github.com/caicedo1089/telegram-sumobotjr",
   "license": "MIT",
   "dependencies": {
-    "johnny-five": "^0.11.7",
+    "johnny-five": "^1.0.0",
     "node-telegram-bot-api": "^0.28.0"
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "gulp-concat": "^2.6.1"
   }
 }
