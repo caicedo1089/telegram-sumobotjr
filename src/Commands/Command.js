@@ -1,12 +1,12 @@
 'use strict';
 
 class Command {
-    constructor(name = 'Base', bot, sumobot, app)
+    constructor(name = 'Base', bot, sumoBot, app)
     {
         //Atributos
         this.name = name
         this.bot = bot
-        this.sumobot = sumobot
+        this.sumoBot = sumoBot
         this.App = app
     }
 
